@@ -1,0 +1,81 @@
+<Window
+    x:Class="BIM.DatViet.Views.BIMDatVietView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Rải Thép Hố Ga"
+    Width="920" Height="720" MinWidth="840" MinHeight="640"
+    WindowStartupLocation="CenterScreen"
+    Closed="OnClosed">
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Padding="12" Background="#102C3B" CornerRadius="5">
+            <StackPanel>
+                <TextBlock Text="RẢI THÉP HỐ GA" Foreground="White" FontSize="20" FontWeight="SemiBold"/>
+                <TextBlock Text="Multi-select 1..n (Wall + Structural Foundation/Floor…) → nhận diện → preview → xác nhận → tạo thép" Foreground="#BFE9F3" Margin="0,4,0,0"/>
+                <TextBlock Text="{Binding Summary}" Foreground="White" TextWrapping="Wrap" Margin="0,8,0,0"/>
+            </StackPanel>
+        </Border>
+
+        <Grid Grid.Row="1" Margin="0,12,0,12">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="16"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <GroupBox Header="Loại thép" Padding="10">
+                <Grid>
+                    <Grid.ColumnDefinitions><ColumnDefinition Width="170"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Text="Đáy / nắp" Margin="0,4"/>
+                    <ComboBox Grid.Row="0" Grid.Column="1" ItemsSource="{Binding BarTypeNames}" SelectedItem="{Binding Preset.SlabBarTypeName}" Margin="0,2"/>
+                    <TextBlock Grid.Row="1" Text="Tường đứng" Margin="0,4"/>
+                    <ComboBox Grid.Row="1" Grid.Column="1" ItemsSource="{Binding BarTypeNames}" SelectedItem="{Binding Preset.WallVerticalBarTypeName}" Margin="0,2"/>
+                    <TextBlock Grid.Row="2" Text="Tường ngang / góc" Margin="0,4"/>
+                    <ComboBox Grid.Row="2" Grid.Column="1" ItemsSource="{Binding BarTypeNames}" SelectedItem="{Binding Preset.WallHorizontalBarTypeName}" Margin="0,2"/>
+                    <TextBlock Grid.Row="3" Text="Viền lỗ" Margin="0,4"/>
+                    <ComboBox Grid.Row="3" Grid.Column="1" ItemsSource="{Binding BarTypeNames}" SelectedItem="{Binding Preset.OpeningBarTypeName}" Margin="0,2"/>
+                </Grid>
+            </GroupBox>
+            <GroupBox Grid.Column="2" Header="Thông số kỹ sư (mm)" Padding="10">
+                <Grid>
+                    <Grid.ColumnDefinitions><ColumnDefinition Width="145"/><ColumnDefinition Width="75"/><ColumnDefinition Width="135"/><ColumnDefinition Width="75"/></Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions><RowDefinition/><RowDefinition/><RowDefinition/><RowDefinition/></Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Text="Cover" Margin="0,4"/><TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Preset.CoverMm}" Margin="2"/>
+                    <TextBlock Grid.Row="0" Grid.Column="2" Text="Bước sàn" Margin="8,4,0,4"/><TextBox Grid.Row="0" Grid.Column="3" Text="{Binding Preset.SlabSpacingMm}" Margin="2"/>
+                    <TextBlock Grid.Row="1" Text="Bước đứng" Margin="0,4"/><TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Preset.WallVerticalSpacingMm}" Margin="2"/>
+                    <TextBlock Grid.Row="1" Grid.Column="2" Text="Bước ngang" Margin="8,4,0,4"/><TextBox Grid.Row="1" Grid.Column="3" Text="{Binding Preset.WallHorizontalSpacingMm}" Margin="2"/>
+                    <TextBlock Grid.Row="2" Text="Hở đầu / cuối" Margin="0,4"/><TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Preset.EndClearanceMm}" Margin="2"/>
+                    <TextBlock Grid.Row="2" Grid.Column="2" Text="Clearance lỗ" Margin="8,4,0,4"/><TextBox Grid.Row="2" Grid.Column="3" Text="{Binding Preset.OpeningClearanceMm}" Margin="2"/>
+                    <TextBlock Grid.Row="3" Text="Neo góc" Margin="0,4"/><TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Preset.CornerLegMm}" Margin="2"/>
+                    <TextBlock Grid.Row="3" Grid.Column="2" Text="Đoạn tối thiểu" Margin="8,4,0,4"/><TextBox Grid.Row="3" Grid.Column="3" Text="{Binding Preset.MinRetainedLengthMm}" Margin="2"/>
+                </Grid>
+            </GroupBox>
+        </Grid>
+
+        <GroupBox Grid.Row="2" Header="Preflight và cảnh báo" Padding="8">
+            <ListBox ItemsSource="{Binding Issues}" FontFamily="Consolas" FontSize="12"/>
+        </GroupBox>
+
+        <Grid Grid.Row="3" Margin="0,12,0,0">
+            <Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+            <StackPanel>
+                <CheckBox Content="Tôi xác nhận preset này đã được kỹ sư kiểm tra" IsChecked="{Binding Preset.EngineerConfirmed}" Checked="OnConfirmationChanged" Unchecked="OnConfirmationChanged" FontWeight="SemiBold"/>
+                <TextBlock Text="{Binding Result}" Foreground="#095A2A" TextWrapping="Wrap" Margin="0,5,12,0"/>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Bottom">
+                <Button Content="Phân tích lại" Click="OnAnalyze" Padding="14,7" Margin="4,0"/>
+                <Button Content="Đổi W1" Click="OnRotateW1" Padding="14,7" Margin="4,0" ToolTip="Chuyển W1 theo chiều kim đồng hồ"/>
+                <Button Content="Tạo thép" Click="OnCreate" IsEnabled="{Binding CanCreate}" Padding="18,7" Margin="4,0" Background="#007C91" Foreground="White" FontWeight="Bold"/>
+                <Button Content="Đóng" Click="OnClose" Padding="14,7" Margin="4,0"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,27 @@
+# This is a Revit shared parameter file.
+# Do not edit manually.
+*META	VERSION	MINVERSION
+META	2	1
+*GROUP	ID	NAME
+GROUP	1	DVB_ABUTMENT
+*PARAM	GUID	NAME	DATATYPE	DATACATEGORY	GROUP	VISIBLE	DESCRIPTION	USERMODIFIABLE	HIDEWHENNOVALUE
+PARAM	9d5450de-83f0-4773-93bd-1e680a2cf916	DVB_AssemblyId	TEXT		1	1	Abutment assembly identifier	0	0
+PARAM	c738ef65-0d17-4a52-8ee4-26ba98fce513	DVB_HostRole	TEXT		1	1	Logical concrete host role	0	0
+PARAM	078c82b1-ce9a-4363-a5ae-0a91651caf61	DVB_RebarZone	TEXT		1	1	Managed abutment rebar zone	0	0
+PARAM	6c79962b-16ff-4e9c-b0f1-b0b7275f34c1	DVB_RuleId	TEXT		1	1	Rule identifier	0	0
+PARAM	cf99fae6-1547-4d82-9a20-9523681ae0dd	DVB_RuleVersion	TEXT		1	1	Rule version	0	0
+PARAM	75708f5c-b284-4d19-a04d-b93ca12223a0	DVB_GenerationId	TEXT		1	1	Generation identifier	0	0
+PARAM	b271d990-9894-45c3-89f2-3108e4d7d9f4	DVB_Managed	TEXT		1	1	1 when managed by DVB abutment generator	0	0
+PARAM	35daa765-67df-46f9-8610-76fc0efdc544	DVB_CanonicalMark	TEXT		1	1	Canonical abutment rebar mark	0	0
+PARAM	8768a08f-f8fa-4936-a74d-2819b5c8564c	DVB_BarPosition	INTEGER		1	1	Bar position this rebar belongs to; the drawing counts positions	1	0
+PARAM	43e23f5d-45e1-4040-87f7-89326335fd57	DVB_PieceIndex	INTEGER		1	1	Piece number inside the bar position; filter to 1 for a finished-bar schedule	1	0
+PARAM	e6da4a98-40be-4fd4-a483-6db4259fca9a	DVB_SpliceCount	INTEGER		1	1	Lap splices on one finished bar	1	0
+PARAM	41fbb6d5-710a-4cee-9f02-32e20f6cf391	DVB_BendRadius	LENGTH		1	1	Bend radius of this bar; 0 for a straight bar	1	0
+PARAM	4e1e2d76-b1b7-429f-8d33-62fa75e04d39	DVB_BarLength	LENGTH		1	1	Finished length of the whole bar position, lap overlap removed	1	0
+PARAM	52934f38-73b8-4384-94e8-46cb376e9b34	DVB_BarTotalLength	LENGTH		1	1	Steel cut for the whole bar position, lap overlap included	1	0
+PARAM	0eee3496-a575-4489-b689-315688d634a7	DVB_BarMass	NUMBER		1	1	Mass of the whole bar position in kg, lap overlap included	1	0
+PARAM	427db0db-5e4b-4e85-9bca-b42bedf66de9	DVB_CutLength	LENGTH		1	1	Length this piece is cut to in the yard	1	0
+PARAM	9b4e290a-3008-41a6-b0e5-1fc24b376034	DVB_LapLength	LENGTH		1	1	Length of one lap splice on this bar	1	0
+PARAM	1e0fd6af-0e80-4d3c-820c-142e3cdf9305	DVB_UnitMass	NUMBER		1	1	Mass per running metre in kg/m	1	0
+PARAM	b5ee9de1-a697-4b3f-b230-188bac838335	DVB_Mass	NUMBER		1	1	Mass of this piece in kg	1	0
+PARAM	c46d5b8e-788e-463f-aaec-de49a85a655c	DVB_TagText	TEXT		1	1	Tag text of this bar, e.g. F3-T 105O20a150	1	0

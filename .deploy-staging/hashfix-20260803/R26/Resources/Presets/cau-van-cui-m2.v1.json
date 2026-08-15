@@ -1,0 +1,1058 @@
+{
+  "profileId": "DVB-ABUTMENT-CAU-VAN-CUI-M2-V1",
+  "schemaVersion": "2.0",
+  "ruleVersion": "2026-08-03.2",
+  "displayName": "Cau Van Cui - Mo M2 - geometry-compatible family types",
+  "ruleHash": "",
+  "maxTemporaryPreviewRebars": 500,
+  "topology": {
+    "familyNameContains": [
+      "MO CAU",
+      "MỐ CẦU"
+    ],
+    "typeNameContains": [],
+    "itemParameterNames": [
+      "HẠNG MỤC",
+      "HANG MUC",
+      "ITEM"
+    ],
+    "itemValueContains": [
+      "MỐ",
+      "MO",
+      "ABUTMENT"
+    ],
+    "footingLengthParameterNames": [
+      "L_MO"
+    ],
+    "footingWidthParameterNames": [
+      "B_BE1",
+      "B_BE"
+    ],
+    "stemTopThicknessParameterNames": [
+      "B_DINH1",
+      "B_DINH"
+    ],
+    "stemBaseThicknessParameterNames": [
+      "B_THAN1",
+      "B_THAN"
+    ],
+    "wingLengthLeftParameterNames": [
+      "L2_CANH_L"
+    ],
+    "wingLengthRightParameterNames": [
+      "L2_CANH_R"
+    ],
+    "wingLengthParameterNames": [
+      "L2_CANH"
+    ],
+    "wingThicknessParameterNames": [
+      "B_CANH"
+    ],
+    "stemHeightLeftParameterNames": [
+      "H_THAN_L"
+    ],
+    "stemHeightRightParameterNames": [
+      "H_THAN_R"
+    ],
+    "skewAngleParameterNames": [
+      "A"
+    ],
+    "footingBoundaryStrategy": "Parallelogram",
+    "hostAssemblyStrategy": "SingleHost",
+    "footingDepthMm": 2000,
+    "footingDepthToleranceMm": 25,
+    "footingLengthMm": 15800,
+    "footingWidthMm": 6400,
+    "toeWidthMm": 2538,
+    "stemBaseThicknessMm": 1545,
+    "heelWidthMm": 2317,
+    "stemThicknessMm": 552,
+    "backwallHeightMm": 2004,
+    "wingwallLengthMm": 5000,
+    "wingwallThicknessMm": 500,
+    "bearingSeatHeightMm": 200,
+    "shearKeyHeightMm": 300,
+    "pedestalHeightMm": 300,
+    "pileHeadDepthMm": 600,
+    "requireEvidenceFiles": false,
+    "requiredZones": [
+      "Footing"
+    ],
+    "pileDefaultDiameterMm": 1200,
+    "pileClearanceMm": 75,
+    "pilePlacementMarginMm": 30,
+    "minimumMatPieceLengthMm": 200,
+    "pileSearchExpansionMm": 500,
+    "pileSearchDepthMm": 5000,
+    "pileCoincidenceToleranceMm": 200,
+    "pileNameContains": [
+      "CKN",
+      "COC",
+      "CỌC",
+      "PILE",
+      "Piles"
+    ]
+  },
+  "standardProfiles": [
+    {
+      "standardId": "TCVN-11823-5-2017",
+      "title": "Highway bridge design - Part 5: Concrete structures",
+      "authorizedFullTextAvailable": false,
+      "sourceReference": "https://tieuchuan.vsqi.gov.vn/tieuchuan/view?sohieu=TCVN+11823-5%3A2017"
+    },
+    {
+      "standardId": "TCVN-11823-11-2017",
+      "title": "Highway bridge design - Part 11: Abutments, piers and retaining walls",
+      "authorizedFullTextAvailable": false,
+      "sourceReference": "https://tieuchuan.vsqi.gov.vn/tieuchuan/view?sohieu=TCVN+11823-11%3A2017"
+    }
+  ],
+  "sourceEvidence": [
+    {
+      "evidenceId": "CVC-P38",
+      "filePath": "C:\\Users\\ADMIN\\Downloads\\01. Cong Viec DV\\Tài Liệu\\01_DU_AN\\01_DUONG_VEN_BIEN_DAK_LAK\\02_Cau_Van_Cui\\QUYEN 2.4.2 HO SO CAU VAN CUI KM2+700.pdf",
+      "page": 38,
+      "drawingTitle": "BO TRI COT THEP BE MO",
+      "drawingCode": "PAGE-38",
+      "sha256": "CEA23056FAA92850785BEDF483DBB4B962FE389F93B221CF7FD21DF47D8D649E"
+    },
+    {
+      "evidenceId": "CVC-P39",
+      "filePath": "C:\\Users\\ADMIN\\Downloads\\01. Cong Viec DV\\Tài Liệu\\01_DU_AN\\01_DUONG_VEN_BIEN_DAK_LAK\\02_Cau_Van_Cui\\QUYEN 2.4.2 HO SO CAU VAN CUI KM2+700.pdf",
+      "page": 39,
+      "drawingTitle": "BO TRI COT THEP THAN MO",
+      "drawingCode": "PAGE-39",
+      "sha256": "CEA23056FAA92850785BEDF483DBB4B962FE389F93B221CF7FD21DF47D8D649E"
+    },
+    {
+      "evidenceId": "CVC-DWG-CHECK",
+      "filePath": "C:\\Users\\ADMIN\\Downloads\\01. Cong Viec DV\\Tài Liệu\\01_DU_AN\\01_DUONG_VEN_BIEN_DAK_LAK\\02_Cau_Van_Cui\\00. Cau Van Cui PHAN DOAN K1+250-K3+400\\04a.Theo mo TKCS 1.dwg",
+      "page": 0,
+      "drawingTitle": "DWG comparison source",
+      "drawingCode": "04a",
+      "sha256": "974E2486F854A449CEB0068BF4E60DDDC5AF73E8FB944C4E5A0B0FEAAF47C6B8"
+    }
+  ],
+  "rules": [
+    {
+      "ruleId": "CVC-F1",
+      "zoneCode": "FTG-BOT-L",
+      "zone": "Footing",
+      "geometryTemplate": "BottomLongitudinal",
+      "shapeStrategy": "ShapeDriven",
+      "layoutRule": "MaximumSpacing",
+      "barMark": "F1",
+      "barTypeName": "D20",
+      "diameterMm": 20,
+      "spacingMm": 150,
+      "coverOverrideMm": 160,
+      "includeFirst": true,
+      "includeLast": true,
+      "enabled": true,
+      "sourceStatus": "Drawing",
+      "sourceEvidenceId": "CVC-P38",
+      "distributionRepresentation": "ExplicitStations",
+      "faceRole": "Bottom",
+      "layerOrder": 1,
+      "clearGapToPreviousMm": 0,
+      "startStationClearanceMm": 0,
+      "endStationClearanceMm": 0,
+      "startEndGeometry": {
+        "kind": "None",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": "CVC-P38"
+      },
+      "endEndGeometry": {
+        "kind": "None",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": "CVC-P38"
+      },
+      "development": {
+        "requiredLengthMm": 0,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "pileObstaclePolicy": "ApprovedDetail",
+      "openingObstaclePolicy": "ApprovedDetail",
+      "obstacleEvidenceId": "CVC-P38",
+      "shapeVerified": false,
+      "shapeEvidenceId": "CVC-P38",
+      "engineerApprovalReference": "",
+      "continuity": {
+        "barFamilyId": "",
+        "kind": "Unresolved",
+        "targetZone": null,
+        "stagger": false,
+        "maximumSpliceFraction": 0.5,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "congestionPolicies": []
+    },
+    {
+      "ruleId": "CVC-F2",
+      "zoneCode": "FTG-BOT-T",
+      "zone": "Footing",
+      "geometryTemplate": "BottomTransverse",
+      "shapeStrategy": "ShapeDriven",
+      "layoutRule": "MaximumSpacing",
+      "barMark": "F2",
+      "barTypeName": "D32",
+      "diameterMm": 32,
+      "spacingMm": 150,
+      "coverOverrideMm": 160,
+      "includeFirst": true,
+      "includeLast": true,
+      "enabled": true,
+      "sourceStatus": "Drawing",
+      "sourceEvidenceId": "CVC-P38",
+      "distributionRepresentation": "ExplicitStations",
+      "faceRole": "Bottom",
+      "layerOrder": 0,
+      "clearGapToPreviousMm": 0,
+      "startStationClearanceMm": 0,
+      "endStationClearanceMm": 0,
+      "startEndGeometry": {
+        "kind": "None",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": "CVC-P38"
+      },
+      "endEndGeometry": {
+        "kind": "None",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": "CVC-P38"
+      },
+      "development": {
+        "requiredLengthMm": 0,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "pileObstaclePolicy": "ApprovedDetail",
+      "openingObstaclePolicy": "ApprovedDetail",
+      "obstacleEvidenceId": "CVC-P38",
+      "shapeVerified": false,
+      "shapeEvidenceId": "CVC-P38",
+      "engineerApprovalReference": "",
+      "continuity": {
+        "barFamilyId": "",
+        "kind": "Unresolved",
+        "targetZone": null,
+        "stagger": false,
+        "maximumSpliceFraction": 0.5,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "congestionPolicies": []
+    },
+    {
+      "ruleId": "CVC-F3",
+      "zoneCode": "FTG-TOP-L",
+      "zone": "Footing",
+      "geometryTemplate": "TopLongitudinal",
+      "shapeStrategy": "ShapeDriven",
+      "layoutRule": "MaximumSpacing",
+      "barMark": "F3",
+      "barTypeName": "D20",
+      "diameterMm": 20,
+      "spacingMm": 150,
+      "coverOverrideMm": 160,
+      "includeFirst": true,
+      "includeLast": true,
+      "enabled": true,
+      "sourceStatus": "Drawing",
+      "sourceEvidenceId": "CVC-P38",
+      "distributionRepresentation": "ExplicitStations",
+      "faceRole": "Top",
+      "layerOrder": 0,
+      "clearGapToPreviousMm": 0,
+      "startStationClearanceMm": 0,
+      "endStationClearanceMm": 0,
+      "startEndGeometry": {
+        "kind": "None",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": "CVC-P38"
+      },
+      "endEndGeometry": {
+        "kind": "None",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": "CVC-P38"
+      },
+      "development": {
+        "requiredLengthMm": 0,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "pileObstaclePolicy": "ContinueThroughMonolithicHost",
+      "openingObstaclePolicy": "Unresolved",
+      "obstacleEvidenceId": "CVC-P38",
+      "shapeVerified": false,
+      "shapeEvidenceId": "CVC-P38",
+      "engineerApprovalReference": "",
+      "continuity": {
+        "barFamilyId": "",
+        "kind": "Unresolved",
+        "targetZone": null,
+        "stagger": false,
+        "maximumSpliceFraction": 0.5,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "congestionPolicies": []
+    },
+    {
+      "ruleId": "CVC-F4",
+      "zoneCode": "FTG-TOP-T",
+      "zone": "Footing",
+      "geometryTemplate": "TopTransverse",
+      "shapeStrategy": "ShapeDriven",
+      "layoutRule": "MaximumSpacing",
+      "barMark": "F4",
+      "barTypeName": "D16",
+      "diameterMm": 16,
+      "spacingMm": 200,
+      "coverOverrideMm": 160,
+      "includeFirst": true,
+      "includeLast": true,
+      "enabled": true,
+      "sourceStatus": "Drawing",
+      "sourceEvidenceId": "CVC-P38",
+      "distributionRepresentation": "ExplicitStations",
+      "faceRole": "Top",
+      "layerOrder": 1,
+      "clearGapToPreviousMm": 0,
+      "startStationClearanceMm": 0,
+      "endStationClearanceMm": 0,
+      "startEndGeometry": {
+        "kind": "None",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": "CVC-P38"
+      },
+      "endEndGeometry": {
+        "kind": "None",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": "CVC-P38"
+      },
+      "development": {
+        "requiredLengthMm": 0,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "pileObstaclePolicy": "ContinueThroughMonolithicHost",
+      "openingObstaclePolicy": "Unresolved",
+      "obstacleEvidenceId": "CVC-P38",
+      "shapeVerified": false,
+      "shapeEvidenceId": "CVC-P38",
+      "engineerApprovalReference": "",
+      "continuity": {
+        "barFamilyId": "",
+        "kind": "Unresolved",
+        "targetZone": null,
+        "stagger": false,
+        "maximumSpliceFraction": 0.5,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "congestionPolicies": []
+    },
+    {
+      "ruleId": "CVC-F5",
+      "zoneCode": "FTG-LOCAL-F5",
+      "zone": "Footing",
+      "geometryTemplate": "StarterLongitudinal",
+      "shapeStrategy": "ShapeDriven",
+      "layoutRule": "MaximumSpacing",
+      "barMark": "F5",
+      "barTypeName": "D16",
+      "diameterMm": 16,
+      "spacingMm": 200,
+      "enabled": false,
+      "disabledReason": "Exact zone/path requires second independent extraction.",
+      "sourceStatus": "Drawing",
+      "sourceEvidenceId": "CVC-P38",
+      "distributionRepresentation": "NativeRebarSet",
+      "faceRole": "Top",
+      "layerOrder": 0,
+      "clearGapToPreviousMm": 0,
+      "startStationClearanceMm": 0,
+      "endStationClearanceMm": 0,
+      "startEndGeometry": {
+        "kind": "Unresolved",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": ""
+      },
+      "endEndGeometry": {
+        "kind": "Unresolved",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": ""
+      },
+      "development": {
+        "requiredLengthMm": 0,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "pileObstaclePolicy": "Unresolved",
+      "openingObstaclePolicy": "Unresolved",
+      "obstacleEvidenceId": "",
+      "shapeVerified": false,
+      "shapeEvidenceId": "CVC-P38",
+      "engineerApprovalReference": "",
+      "continuity": {
+        "barFamilyId": "",
+        "kind": "Unresolved",
+        "targetZone": null,
+        "stagger": false,
+        "maximumSpliceFraction": 0.5,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "congestionPolicies": []
+    },
+    {
+      "ruleId": "CVC-F6",
+      "zoneCode": "FTG-LOCAL-F6",
+      "zone": "Footing",
+      "geometryTemplate": "ClosedTie",
+      "shapeStrategy": "ShapeDriven",
+      "layoutRule": "MaximumSpacing",
+      "barMark": "F6",
+      "barTypeName": "D16",
+      "diameterMm": 16,
+      "spacingMm": 600,
+      "enabled": false,
+      "disabledReason": "Exact tie geometry is unresolved.",
+      "sourceStatus": "Drawing",
+      "sourceEvidenceId": "CVC-P38",
+      "distributionRepresentation": "NativeRebarSet",
+      "faceRole": "Front",
+      "layerOrder": 0,
+      "clearGapToPreviousMm": 0,
+      "startStationClearanceMm": 0,
+      "endStationClearanceMm": 0,
+      "startEndGeometry": {
+        "kind": "Unresolved",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": ""
+      },
+      "endEndGeometry": {
+        "kind": "Unresolved",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": ""
+      },
+      "development": {
+        "requiredLengthMm": 0,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "pileObstaclePolicy": "Unresolved",
+      "openingObstaclePolicy": "Unresolved",
+      "obstacleEvidenceId": "",
+      "shapeVerified": false,
+      "shapeEvidenceId": "CVC-P38",
+      "engineerApprovalReference": "",
+      "continuity": {
+        "barFamilyId": "",
+        "kind": "Unresolved",
+        "targetZone": null,
+        "stagger": false,
+        "maximumSpliceFraction": 0.5,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "congestionPolicies": []
+    },
+    {
+      "ruleId": "CVC-F6A",
+      "zoneCode": "FTG-LOCAL-F6A",
+      "zone": "Footing",
+      "geometryTemplate": "ClosedTie",
+      "shapeStrategy": "ShapeDriven",
+      "layoutRule": "MaximumSpacing",
+      "barMark": "F6A",
+      "barTypeName": "D16",
+      "diameterMm": 16,
+      "spacingMm": 150,
+      "enabled": false,
+      "disabledReason": "Exact tie geometry is unresolved.",
+      "sourceStatus": "Drawing",
+      "sourceEvidenceId": "CVC-P38",
+      "distributionRepresentation": "NativeRebarSet",
+      "faceRole": "Front",
+      "layerOrder": 0,
+      "clearGapToPreviousMm": 0,
+      "startStationClearanceMm": 0,
+      "endStationClearanceMm": 0,
+      "startEndGeometry": {
+        "kind": "Unresolved",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": ""
+      },
+      "endEndGeometry": {
+        "kind": "Unresolved",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": ""
+      },
+      "development": {
+        "requiredLengthMm": 0,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "pileObstaclePolicy": "Unresolved",
+      "openingObstaclePolicy": "Unresolved",
+      "obstacleEvidenceId": "",
+      "shapeVerified": false,
+      "shapeEvidenceId": "CVC-P38",
+      "engineerApprovalReference": "",
+      "continuity": {
+        "barFamilyId": "",
+        "kind": "Unresolved",
+        "targetZone": null,
+        "stagger": false,
+        "maximumSpliceFraction": 0.5,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "congestionPolicies": []
+    },
+    {
+      "ruleId": "CVC-F7",
+      "zoneCode": "FTG-LOCAL-F7",
+      "zone": "Footing",
+      "geometryTemplate": "StarterTransverse",
+      "shapeStrategy": "ShapeDriven",
+      "layoutRule": "MaximumSpacing",
+      "barMark": "F7",
+      "barTypeName": "D12",
+      "diameterMm": 12,
+      "spacingMm": 150,
+      "enabled": false,
+      "disabledReason": "Exact local placement is unresolved.",
+      "sourceStatus": "Drawing",
+      "sourceEvidenceId": "CVC-P38",
+      "distributionRepresentation": "NativeRebarSet",
+      "faceRole": "Top",
+      "layerOrder": 0,
+      "clearGapToPreviousMm": 0,
+      "startStationClearanceMm": 0,
+      "endStationClearanceMm": 0,
+      "startEndGeometry": {
+        "kind": "Unresolved",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": ""
+      },
+      "endEndGeometry": {
+        "kind": "Unresolved",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": ""
+      },
+      "development": {
+        "requiredLengthMm": 0,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "pileObstaclePolicy": "Unresolved",
+      "openingObstaclePolicy": "Unresolved",
+      "obstacleEvidenceId": "",
+      "shapeVerified": false,
+      "shapeEvidenceId": "CVC-P38",
+      "engineerApprovalReference": "",
+      "continuity": {
+        "barFamilyId": "",
+        "kind": "Unresolved",
+        "targetZone": null,
+        "stagger": false,
+        "maximumSpliceFraction": 0.5,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "congestionPolicies": []
+    },
+    {
+      "ruleId": "CVC-A1",
+      "zoneCode": "STEM-FRONT-V",
+      "zone": "Stem",
+      "geometryTemplate": "VerticalFront",
+      "shapeStrategy": "ShapeDriven",
+      "layoutRule": "MaximumSpacing",
+      "barMark": "A1",
+      "barTypeName": "D16",
+      "diameterMm": 16,
+      "spacingMm": 150,
+      "enabled": false,
+      "disabledReason": "Face/orientation requires independent confirmation.",
+      "sourceStatus": "Drawing",
+      "sourceEvidenceId": "CVC-P39",
+      "distributionRepresentation": "NativeRebarSet",
+      "faceRole": "Front",
+      "layerOrder": 0,
+      "clearGapToPreviousMm": 0,
+      "startStationClearanceMm": 0,
+      "endStationClearanceMm": 0,
+      "startEndGeometry": {
+        "kind": "Unresolved",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": ""
+      },
+      "endEndGeometry": {
+        "kind": "Unresolved",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": ""
+      },
+      "development": {
+        "requiredLengthMm": 0,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "pileObstaclePolicy": "Unresolved",
+      "openingObstaclePolicy": "Unresolved",
+      "obstacleEvidenceId": "",
+      "shapeVerified": false,
+      "shapeEvidenceId": "CVC-P39",
+      "engineerApprovalReference": "",
+      "continuity": {
+        "barFamilyId": "",
+        "kind": "Unresolved",
+        "targetZone": null,
+        "stagger": false,
+        "maximumSpliceFraction": 0.5,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "congestionPolicies": []
+    },
+    {
+      "ruleId": "CVC-A2",
+      "zoneCode": "STEM-FRONT-H",
+      "zone": "Stem",
+      "geometryTemplate": "HorizontalFront",
+      "shapeStrategy": "ShapeDriven",
+      "layoutRule": "MaximumSpacing",
+      "barMark": "A2/A2A/A2B/A2C",
+      "barTypeName": "D14",
+      "diameterMm": 14,
+      "spacingMm": 150,
+      "enabled": false,
+      "disabledReason": "Segmentation requires independent confirmation.",
+      "sourceStatus": "Drawing",
+      "sourceEvidenceId": "CVC-P39",
+      "distributionRepresentation": "NativeRebarSet",
+      "faceRole": "Front",
+      "layerOrder": 0,
+      "clearGapToPreviousMm": 0,
+      "startStationClearanceMm": 0,
+      "endStationClearanceMm": 0,
+      "startEndGeometry": {
+        "kind": "Unresolved",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": ""
+      },
+      "endEndGeometry": {
+        "kind": "Unresolved",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": ""
+      },
+      "development": {
+        "requiredLengthMm": 0,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "pileObstaclePolicy": "Unresolved",
+      "openingObstaclePolicy": "Unresolved",
+      "obstacleEvidenceId": "",
+      "shapeVerified": false,
+      "shapeEvidenceId": "CVC-P39",
+      "engineerApprovalReference": "",
+      "continuity": {
+        "barFamilyId": "",
+        "kind": "Unresolved",
+        "targetZone": null,
+        "stagger": false,
+        "maximumSpliceFraction": 0.5,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "congestionPolicies": []
+    },
+    {
+      "ruleId": "CVC-A3",
+      "zoneCode": "STEM-BACK-V",
+      "zone": "Stem",
+      "geometryTemplate": "VerticalBack",
+      "shapeStrategy": "ShapeDriven",
+      "layoutRule": "MaximumSpacing",
+      "barMark": "A3",
+      "barTypeName": "D16",
+      "diameterMm": 16,
+      "spacingMm": 150,
+      "enabled": false,
+      "disabledReason": "Face/orientation requires independent confirmation.",
+      "sourceStatus": "Drawing",
+      "sourceEvidenceId": "CVC-P39",
+      "distributionRepresentation": "NativeRebarSet",
+      "faceRole": "Back",
+      "layerOrder": 0,
+      "clearGapToPreviousMm": 0,
+      "startStationClearanceMm": 0,
+      "endStationClearanceMm": 0,
+      "startEndGeometry": {
+        "kind": "Unresolved",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": ""
+      },
+      "endEndGeometry": {
+        "kind": "Unresolved",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": ""
+      },
+      "development": {
+        "requiredLengthMm": 0,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "pileObstaclePolicy": "Unresolved",
+      "openingObstaclePolicy": "Unresolved",
+      "obstacleEvidenceId": "",
+      "shapeVerified": false,
+      "shapeEvidenceId": "CVC-P39",
+      "engineerApprovalReference": "",
+      "continuity": {
+        "barFamilyId": "",
+        "kind": "Unresolved",
+        "targetZone": null,
+        "stagger": false,
+        "maximumSpliceFraction": 0.5,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "congestionPolicies": []
+    },
+    {
+      "ruleId": "CVC-A4",
+      "zoneCode": "STEM-TIE-A4",
+      "zone": "Stem",
+      "geometryTemplate": "ClosedTie",
+      "shapeStrategy": "ShapeDriven",
+      "layoutRule": "MaximumSpacing",
+      "barMark": "A4",
+      "barTypeName": "D25",
+      "diameterMm": 25,
+      "spacingMm": 500,
+      "enabled": false,
+      "disabledReason": "Exact shape and anchorage are unresolved.",
+      "sourceStatus": "Drawing",
+      "sourceEvidenceId": "CVC-P39",
+      "distributionRepresentation": "NativeRebarSet",
+      "faceRole": "Front",
+      "layerOrder": 0,
+      "clearGapToPreviousMm": 0,
+      "startStationClearanceMm": 0,
+      "endStationClearanceMm": 0,
+      "startEndGeometry": {
+        "kind": "Unresolved",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": ""
+      },
+      "endEndGeometry": {
+        "kind": "Unresolved",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": ""
+      },
+      "development": {
+        "requiredLengthMm": 0,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "pileObstaclePolicy": "Unresolved",
+      "openingObstaclePolicy": "Unresolved",
+      "obstacleEvidenceId": "",
+      "shapeVerified": false,
+      "shapeEvidenceId": "CVC-P39",
+      "engineerApprovalReference": "",
+      "continuity": {
+        "barFamilyId": "",
+        "kind": "Unresolved",
+        "targetZone": null,
+        "stagger": false,
+        "maximumSpliceFraction": 0.5,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "congestionPolicies": []
+    },
+    {
+      "ruleId": "CVC-A5",
+      "zoneCode": "STEM-TIE-A5",
+      "zone": "Stem",
+      "geometryTemplate": "ClosedTie",
+      "shapeStrategy": "ShapeDriven",
+      "layoutRule": "MaximumSpacing",
+      "barMark": "A5",
+      "barTypeName": "D16",
+      "diameterMm": 16,
+      "spacingMm": 600,
+      "enabled": false,
+      "disabledReason": "Exact shape and anchorage are unresolved.",
+      "sourceStatus": "Drawing",
+      "sourceEvidenceId": "CVC-P39",
+      "distributionRepresentation": "NativeRebarSet",
+      "faceRole": "Front",
+      "layerOrder": 0,
+      "clearGapToPreviousMm": 0,
+      "startStationClearanceMm": 0,
+      "endStationClearanceMm": 0,
+      "startEndGeometry": {
+        "kind": "Unresolved",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": ""
+      },
+      "endEndGeometry": {
+        "kind": "Unresolved",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": ""
+      },
+      "development": {
+        "requiredLengthMm": 0,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "pileObstaclePolicy": "Unresolved",
+      "openingObstaclePolicy": "Unresolved",
+      "obstacleEvidenceId": "",
+      "shapeVerified": false,
+      "shapeEvidenceId": "CVC-P39",
+      "engineerApprovalReference": "",
+      "continuity": {
+        "barFamilyId": "",
+        "kind": "Unresolved",
+        "targetZone": null,
+        "stagger": false,
+        "maximumSpliceFraction": 0.5,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "congestionPolicies": []
+    },
+    {
+      "ruleId": "CVC-W1",
+      "zoneCode": "WW-L-V",
+      "zone": "WingwallLeft",
+      "geometryTemplate": "VerticalFront",
+      "shapeStrategy": "ShapeDriven",
+      "layoutRule": "MaximumSpacing",
+      "barMark": "W1",
+      "barTypeName": "D28",
+      "diameterMm": 28,
+      "spacingMm": 150,
+      "enabled": false,
+      "disabledReason": "Wingwall face and taper path are unresolved.",
+      "sourceStatus": "Drawing",
+      "sourceEvidenceId": "CVC-P39",
+      "distributionRepresentation": "NativeRebarSet",
+      "faceRole": "Front",
+      "layerOrder": 0,
+      "clearGapToPreviousMm": 0,
+      "startStationClearanceMm": 0,
+      "endStationClearanceMm": 0,
+      "startEndGeometry": {
+        "kind": "Unresolved",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": ""
+      },
+      "endEndGeometry": {
+        "kind": "Unresolved",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": ""
+      },
+      "development": {
+        "requiredLengthMm": 0,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "pileObstaclePolicy": "Unresolved",
+      "openingObstaclePolicy": "Unresolved",
+      "obstacleEvidenceId": "",
+      "shapeVerified": false,
+      "shapeEvidenceId": "CVC-P39",
+      "engineerApprovalReference": "",
+      "continuity": {
+        "barFamilyId": "",
+        "kind": "Unresolved",
+        "targetZone": null,
+        "stagger": false,
+        "maximumSpliceFraction": 0.5,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "congestionPolicies": []
+    },
+    {
+      "ruleId": "CVC-W2",
+      "zoneCode": "WW-L-H",
+      "zone": "WingwallLeft",
+      "geometryTemplate": "HorizontalFront",
+      "shapeStrategy": "ShapeDriven",
+      "layoutRule": "MaximumSpacing",
+      "barMark": "W2",
+      "barTypeName": "D16",
+      "diameterMm": 16,
+      "spacingMm": 150,
+      "enabled": false,
+      "disabledReason": "Wingwall face and taper path are unresolved.",
+      "sourceStatus": "Drawing",
+      "sourceEvidenceId": "CVC-P39",
+      "distributionRepresentation": "NativeRebarSet",
+      "faceRole": "Front",
+      "layerOrder": 0,
+      "clearGapToPreviousMm": 0,
+      "startStationClearanceMm": 0,
+      "endStationClearanceMm": 0,
+      "startEndGeometry": {
+        "kind": "Unresolved",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": ""
+      },
+      "endEndGeometry": {
+        "kind": "Unresolved",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": ""
+      },
+      "development": {
+        "requiredLengthMm": 0,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "pileObstaclePolicy": "Unresolved",
+      "openingObstaclePolicy": "Unresolved",
+      "obstacleEvidenceId": "",
+      "shapeVerified": false,
+      "shapeEvidenceId": "CVC-P39",
+      "engineerApprovalReference": "",
+      "continuity": {
+        "barFamilyId": "",
+        "kind": "Unresolved",
+        "targetZone": null,
+        "stagger": false,
+        "maximumSpliceFraction": 0.5,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "congestionPolicies": []
+    },
+    {
+      "ruleId": "CVC-W3-W6",
+      "zoneCode": "WW-LOCAL",
+      "zone": "WingwallRight",
+      "geometryTemplate": "SurfaceFreeForm",
+      "shapeStrategy": "CustomServerFreeForm",
+      "layoutRule": "MaximumSpacing",
+      "barMark": "W3/W4/W5/W6",
+      "barTypeName": "D16",
+      "diameterMm": 16,
+      "spacingMm": 150,
+      "enabled": false,
+      "disabledReason": "Marks must be separated and geometry confirmed.",
+      "sourceStatus": "Drawing",
+      "sourceEvidenceId": "CVC-P39",
+      "distributionRepresentation": "NativeRebarSet",
+      "faceRole": "Front",
+      "layerOrder": 0,
+      "clearGapToPreviousMm": 0,
+      "startStationClearanceMm": 0,
+      "endStationClearanceMm": 0,
+      "startEndGeometry": {
+        "kind": "Unresolved",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": ""
+      },
+      "endEndGeometry": {
+        "kind": "Unresolved",
+        "typeName": "",
+        "orientation": "",
+        "rotationDegrees": 0,
+        "sourceEvidenceId": ""
+      },
+      "development": {
+        "requiredLengthMm": 0,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "pileObstaclePolicy": "Unresolved",
+      "openingObstaclePolicy": "Unresolved",
+      "obstacleEvidenceId": "",
+      "shapeVerified": false,
+      "shapeEvidenceId": "CVC-P39",
+      "engineerApprovalReference": "",
+      "continuity": {
+        "barFamilyId": "",
+        "kind": "Unresolved",
+        "targetZone": null,
+        "stagger": false,
+        "maximumSpliceFraction": 0.5,
+        "sourceEvidenceId": "",
+        "engineerApprovalReference": ""
+      },
+      "congestionPolicies": []
+    }
+  ]
+}

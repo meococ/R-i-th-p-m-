@@ -1,0 +1,4 @@
+(setvar "FILEDIA" 0)
+(setvar "CMDDIA" 0)
+(command "_.SAVEAS" "_DXF" "_Version" "2018" "16" "C:/Users/ADMIN/AppData/Local/Temp/cvc-source.dxf")
+(command "_.QUIT" "_Y")

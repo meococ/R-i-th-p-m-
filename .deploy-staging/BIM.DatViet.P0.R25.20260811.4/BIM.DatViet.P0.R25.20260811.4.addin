@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>BIM-DatViet</Name>
+    <Assembly>BIM.DatViet.P0.R25.20260811.4\BIM.DatViet\BIM.DatViet.dll</Assembly>
+    <AddInId>6F1772D7-34FD-427B-B494-48231A67D9D3</AddInId>
+    <FullClassName>BIM.DatViet.Application</FullClassName>
+    <VendorId>Development</VendorId>
+    <VendorDescription>Safe P0 v4 - Cầu Vạn Củi - 2026-08-11</VendorDescription>
+  </AddIn>
+</RevitAddIns>

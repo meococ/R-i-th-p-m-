@@ -1,0 +1,108 @@
+c
+100 
+160 
+2000 
+100 
+15800/2=7900 
+e
+D
+150 
+c
+e
+D
+100 
+150 
+170 170 
+51@150=7650 
+15800/2=7900 
+51@150=7650 
+#@200=1400 
+1/2 mÆt c¾t b-b tû lÖ: 1/90 1/2 mÆt c¾t a-a tû lÖ: 1/90 1/2 mÆt c¾t C-C tû lÖ: 1/90 
+2000 
+2538 1545 2317 
+100 160 
+170 170 
+#@200=1400 
+a
+b
+6400 
+2317 1545 2538 
+a
+110 110 
+14@150=2100 
+b
+6400 
+217 
+2317 1545 2538 
+7@150=1050 15@150=2250 
+100 150 51@150=7650 
+15800/2=7900 
+17433
+100 150 
+15800/2=7900 
+51@150=7650 
+1/2 M ẶT C ẮT D-D 
+Tû lÖ: 1/90 1/2 M ẶT C ẮT E-E 
+Tû lÖ: 1/90 
+6 5 °
+15800 
+170 229 
+2@300 
+2@300 
+110 110 
+14@150=2100 
+217 
+7@150=1050 15@150=2250 
+170 229 
+110 110 
+14@150=2100 
+6400 
+217 
+7@150=1050 15@150=2250 
+170 229 
+ghi chó: 
+bè trÝ cèt thÐp bÖ mè 
+LÇn chØnh söa: 
+Tû lÖ b¶n vÏ: 
+LÇn xuÊt b¶n: m· sè s¶n phÈm: 26-tecc4-01-h.® 
+00 
+01 
+B¶n vÏ sè: 
+Tæng sè b¶n vÏ: 
+§O¹N KÕT NèI PH¦êNG XU¢N §µI - X· TUY AN §¤NG 
+Dù ¸N TUYÕN §¦êNG Bé VEN BIÓN TØNH §¾K L¾K 
+b−íc: LËP B¸O C¸O NGHI£N CøU KH¶ THI 
+§ÞA §IÓM: PH¦êNG XU¢N §µI & X· TUY AN §¤NG, TØNH §¾K L¾K 
+THùC HIÖN 
+PHAN THANH S ƠN
+KIÓM TRA 
+chñ tr× thiÕt kÕ 
+chñ nhiÖm thiÕt kÕ 
+Phßng thiÕt kÕ 
+uû ban nh©n d©n tØnh §¾K L¾K 
+BAN QL C¸C Dù ¸N §TXD KHU VùC PHÝA §¤NG vâ anh trung 
+L¦¥NG B¸ VINH 
+th¸i nguyÔn ph−¬ng 
+CAO THANH CH¦¥NG 
+kcs 
+liªn danh t− vÊn 
+TECC4-DRB-§ÊT VIÖT Tv4 
+C O ÂN G T Y T R AÙC H
+N H
+I E ÄM
+HÖÕU
+HAÏN
+TÖ
+VAÁN
+THIEÁTKEÁ
+D - R - B 
+®¾k l¾k, tH¸NG 6 N¡M 2026 
+Dù ¸N THµNH PHÇN I 
+CÔNG TY CP TVTK VÀ XD GT 4 (TECC4) 
+GI¸M §èC §IÒU HµNH Dù ¸N 
+CÔNG TY TNHH TVTK D-R-B 
+ (NHÀ TH ẦU PH Ụ)
+GI¸M §èC 
+NGÔ QUANG THÁI 
+NG¤ QUANG TH¸I 
+NG¤ QUANG TH¸I 

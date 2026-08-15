@@ -1,0 +1,3 @@
+aacb4bbaec1e4597b41fb1b798d04b23576cd451d34dc669d7ca88b1d6ce045c  BIM.DatViet/BIM.DatViet.dll
+59e693b4199368a79ed6101e836ec98e1ca75283d7c5fe262799c2ad46a687a0  BIM.DatViet/Resources/Presets/cau-van-cui-m2.v1.json
+08ac254fa175df7be4003d6fb56b6ebbe46074fa5fc7d0c7b1dc3ece504c27fa  BIM.DatViet.P0.R25.20260811.2.addin

@@ -1,0 +1,14 @@
+# This is a Revit shared parameter file.
+# Do not edit manually.
+*META	VERSION	MINVERSION
+META	2	1
+*GROUP	ID	NAME
+GROUP	1	DVB_ABUTMENT
+*PARAM	GUID	NAME	DATATYPE	DATACATEGORY	GROUP	VISIBLE	DESCRIPTION	USERMODIFIABLE	HIDEWHENNOVALUE
+PARAM	9d5450de-83f0-4773-93bd-1e680a2cf916	DVB_AssemblyId	TEXT		1	1	Abutment assembly identifier	0	0
+PARAM	c738ef65-0d17-4a52-8ee4-26ba98fce513	DVB_HostRole	TEXT		1	1	Logical concrete host role	0	0
+PARAM	078c82b1-ce9a-4363-a5ae-0a91651caf61	DVB_RebarZone	TEXT		1	1	Managed abutment rebar zone	0	0
+PARAM	6c79962b-16ff-4e9c-b0f1-b0b7275f34c1	DVB_RuleId	TEXT		1	1	Rule identifier	0	0
+PARAM	cf99fae6-1547-4d82-9a20-9523681ae0dd	DVB_RuleVersion	TEXT		1	1	Rule version	0	0
+PARAM	75708f5c-b284-4d19-a04d-b93ca12223a0	DVB_GenerationId	TEXT		1	1	Generation identifier	0	0
+PARAM	b271d990-9894-45c3-89f2-3108e4d7d9f4	DVB_Managed	TEXT		1	1	1 when managed by DVB abutment generator	0	0
